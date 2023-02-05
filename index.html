@@ -1053,31 +1053,36 @@
         body.is-ie #wrapper {
             height: 100%;
         }
+        div.hidden {
+            display: none;
+        }
     </style>
 </head>
 <body class="is-loading">
 <!-- Wrapper -->
 <div id="wrapper">
     <!-- Main -->
-    <section id="main">
+    <section id="main" vocab="https://schema.org/" typeof="Person">
         <header>
             <span class="avatar">
-                <img src="/images/photo.jpg" alt="Рымарчик Александр" height="280px" width="240px" />
+                <img src="/images/photo.jpg" alt="Рымарчик Александр" height="280px" width="240px" property="image"/>
             </span>
             <h1>Рымарчик Александр</h1>
+            <div class="hidden" property="givenName">Рымарчик</div>
+            <div class="hidden" property="familyName">Александр</div>
             <h2>[Rymarchyk Alexander]</h2>
-            <p>инженер</p>
+            <p property="jobTitle">инженер</p>
         </header>
         <footer>
             <ul class="icons">
-                <li><a href="https://www.linkedin.com/in/alexander-rymarchik-a0053130/" class="fa-linkedin">LinkedIn</a></li>
+                <li><a href="https://www.linkedin.com/in/alexander-rymarchik-a0053130/" class="fa-linkedin" property="sameAs">LinkedIn</a></li>
             </ul>
         </footer>
     </section>
     <!-- Footer -->
     <footer id="footer">
         <ul class="copyright">
-            <li>&copy;<a href="https://рым.бел">&nbsp;</a></li>
+            <li>&copy;<a href="https://рым.бел" property="url">&nbsp;</a></li>
             <li>Дизайн: <a href="https://html5up.net">HTML5 UP</a></li>
         </ul>
     </footer>
